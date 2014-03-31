@@ -14,6 +14,6 @@
         </div>
         <div class="span-4">
             <p><?php echo TbHtml::b('Наименование:'); ?><br><?php echo $item->name ?></p>
-            <p><?php echo TbHtml::b('Стоимость:'); ?><br><?php echo $item->price ?></p>
+            <p><?php echo TbHtml::b('Стоимость:'); ?><br><?php echo $item->price ?> руб.</p>
         </div>
 </div>
