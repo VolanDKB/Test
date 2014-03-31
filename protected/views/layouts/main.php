@@ -25,10 +25,9 @@
             <?php $this->widget('bootstrap.widgets.TbNav', array(
                 'type' => TbHtml::NAV_TYPE_PILLS,
                 'items' => array(
-                    array('label' => 'Домашняя страница', 'url' => '#', 'active' => true),
-                    array('label' => 'Продавцы', 'url' => '#', 'visible'=>Yii::app()->user->role == Roles::ADMIN),
-                    array('label' => 'Магазины', 'url' => '#', 'visible'=>Yii::app()->user->role == Roles::ADMIN),
-                    array('label' => 'Мой магазин', 'url' => '#', 'visible'=>Yii::app()->user->role == Roles::BUYER),
+                    array('label' => 'Домашняя страница', 'url' => array('site/index'),),
+                    array('label' => 'Продавцы', 'url' => array('site/adminsellers'), 'visible'=>Yii::app()->user->role == Roles::ADMIN),
+                    array('label' => 'Мой магазин', 'url' => array('shop/index'), 'visible'=>Yii::app()->user->role == Roles::BUYER),
                     array('label' => 'Выйти', 'url' => '/index.php/users/logout', 'visible'=>!Yii::app()->user->isGuest, 'style'=>'float: right'),
                     array('label' => 'Мой профиль', 'url' => '#', 'visible'=>!Yii::app()->user->isGuest, 'style'=>'float: right'),
                 ),

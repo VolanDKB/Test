@@ -1,5 +1,6 @@
 <?php
 /* @var $this SiteController */
+/*
 for($i = 0; $i < 20; $i++)
 {
     echo "<div class='row price_grid'>";
@@ -11,6 +12,13 @@ for($i = 0; $i < 20; $i++)
     }
     echo "</div>";
 }
+*/
+$this->widget('bootstrap.widgets.TbHeroUnit', array(
+    'htmlOptions' => array("style"=>"background-color: white; color: green;",),
+    'headingOptions' => array("style"=>"font-size: 45px;",),
+    'heading' => 'Добро пожаловать!',
+    'content' => '',
+));
 
 
 

@@ -14,6 +14,12 @@ class WebUser extends CWebUser {
             return -1;
         }
 
+        function getCounter(){
+            $user = $this->loadUser(Yii::app()->user->id);
+            $price_items = PriceItems::model()->findAllByAttributes(array("seller_id"=>Yii::app()->user->id));
+            return (int)($user->AllowedPriceCount->counter - count($price_items));
+        }
+
         protected function loadUser($id=null)
         {
             if($this->_model===null)

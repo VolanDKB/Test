@@ -1,28 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "users".
+ * This is the model class for table "price_items".
  *
- * The followings are the available columns in table 'users':
+ * The followings are the available columns in table 'price_items':
  * @property integer $id
- * @property string $username
- * @property string $password
  * @property string $name
- * @property integer $role
+ * @property double $price
+ * @property integer $seller_id
  *
  * The followings are the available model relations:
- * @property Roles $role0
+ * @property Users $seller
  */
-class Users extends CActiveRecord
+class PriceItems extends CActiveRecord
 {
-
-    public $password_repeat = null;
-    public $scenario = null;
-
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Users the static model class
+	 * @return PriceItems the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -34,7 +29,7 @@ class Users extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'users';
+		return 'price_items';
 	}
 
 	/**
@@ -45,14 +40,13 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('role', 'numerical', 'integerOnly'=>true),
-            array('username', 'unique'),
-            array('password', 'compare'),
-			array('username, password', 'length', 'max'=>50),
-			array('name', 'length', 'max'=>1024),
+			array('name, price, seller_id', 'required'),
+			array('seller_id', 'numerical', 'integerOnly'=>true),
+			array('price', 'numerical'),
+			array('name', 'length', 'max'=>256),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('username, password, name, role, password_repeat, scenario', 'safe'),
+			array('id, name, price, seller_id, description', 'safe'),
 		);
 	}
 
@@ -64,8 +58,7 @@ class Users extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'role' => array(self::BELONGS_TO, 'Roles', 'role'),
-            'AllowedPriceCount' => array(self::HAS_ONE, 'AllowedPriceCount', 'user_id'),
+			'seller' => array(self::BELONGS_TO, 'Users', 'seller_id'),
 		);
 	}
 
@@ -76,19 +69,11 @@ class Users extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'username' => 'Логин пользователя',
-			'password' => 'Пароль',
-            'password_repeat' => 'Повторный ввод пароля для предотвращения ошибок',
-			'name' => 'Отображаемое на сайте имя',
-			'role' => 'Роль пользователя в системе',
+			'name' => 'Name',
+			'price' => 'Price',
+			'seller_id' => 'Seller',
 		);
 	}
-
-    public function beforeSave()
-    {
-        $this->password = md5($this->password);
-        return parent::beforeSave();
-    }
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
@@ -102,10 +87,9 @@ class Users extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('username',$this->username,true);
-		$criteria->compare('password',$this->password,true);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('role',$this->role);
+		$criteria->compare('price',$this->price);
+		$criteria->compare('seller_id',$this->seller_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

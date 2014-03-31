@@ -1,28 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "users".
+ * This is the model class for table "allowed_price_count".
  *
- * The followings are the available columns in table 'users':
+ * The followings are the available columns in table 'allowed_price_count':
  * @property integer $id
- * @property string $username
- * @property string $password
- * @property string $name
- * @property integer $role
+ * @property integer $user_id
+ * @property integer $counter
  *
  * The followings are the available model relations:
- * @property Roles $role0
+ * @property Users $user
  */
-class Users extends CActiveRecord
+class AllowedPriceCount extends CActiveRecord
 {
-
-    public $password_repeat = null;
-    public $scenario = null;
-
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Users the static model class
+	 * @return AllowedPriceCount the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -34,7 +28,7 @@ class Users extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'users';
+		return 'allowed_price_count';
 	}
 
 	/**
@@ -45,14 +39,10 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('role', 'numerical', 'integerOnly'=>true),
-            array('username', 'unique'),
-            array('password', 'compare'),
-			array('username, password', 'length', 'max'=>50),
-			array('name', 'length', 'max'=>1024),
+			array('user_id, counter', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('username, password, name, role, password_repeat, scenario', 'safe'),
+			array('id, user_id, counter', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,8 +54,7 @@ class Users extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'role' => array(self::BELONGS_TO, 'Roles', 'role'),
-            'AllowedPriceCount' => array(self::HAS_ONE, 'AllowedPriceCount', 'user_id'),
+			'user' => array(self::BELONGS_TO, 'Users', 'user_id'),
 		);
 	}
 
@@ -76,19 +65,10 @@ class Users extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'username' => 'Логин пользователя',
-			'password' => 'Пароль',
-            'password_repeat' => 'Повторный ввод пароля для предотвращения ошибок',
-			'name' => 'Отображаемое на сайте имя',
-			'role' => 'Роль пользователя в системе',
+			'user_id' => 'User',
+			'counter' => 'Counter',
 		);
 	}
-
-    public function beforeSave()
-    {
-        $this->password = md5($this->password);
-        return parent::beforeSave();
-    }
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
@@ -102,10 +82,8 @@ class Users extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('username',$this->username,true);
-		$criteria->compare('password',$this->password,true);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('role',$this->role);
+		$criteria->compare('user_id',$this->user_id);
+		$criteria->compare('counter',$this->counter);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

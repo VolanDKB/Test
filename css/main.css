@@ -60,8 +60,12 @@ body
 }
 .price_element
 {
-    border: 1px solid green;
+    border: 2px solid green;
     padding: 10px;
+    border-radius: 10px;
+    height: 220px;
+    overflow: hidden;
+    background-color: #d3d3d3;
 }
 .price_grid
 {
@@ -266,27 +270,4 @@ div.search-form
 .operations li a:hover
 {
 	background: #80CFFF;
-}
-.login
-{
-    width: 45%;
-    padding: 10px;
-    float: left;
-    opacity: 0.3;
-}
-.login:hover
-{
-    opacity: 1;
-}
-
-.registrate
-{
-    width: 45%;
-    padding: 10px;
-    float: left;
-    opacity: 0.3;
-}
-.registrate:hover
-{
-    opacity: 1;
 }

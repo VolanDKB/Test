@@ -47,4 +47,12 @@ class SiteController extends Controller
 				$this->render('error', $error);
 		}
 	}
+
+    public function actionAdminSellers()
+    {
+        $dataProvider =  new CArrayDataProvider('Users');
+        $Person = Users::model()->findAll();
+        $dataProvider->setData($Person);
+        $this->render("admin_sellers", array('person'=>$dataProvider));
+    }
 }
