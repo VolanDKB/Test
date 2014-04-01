@@ -47,6 +47,7 @@ class PriceItems extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, price, seller_id, description', 'safe'),
+            array('image', 'file', 'types'=>'png'),
 		);
 	}
 

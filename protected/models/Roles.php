@@ -14,8 +14,8 @@ class Roles extends CActiveRecord
 {
     const ADMIN     = 1;
     const MODER     = 2;
-    const BUYER     = 3;
-    CONST SELLER    = 4;
+    const SELLER    = 3;
+    CONST BUYER     = 4;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.

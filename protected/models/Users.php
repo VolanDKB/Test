@@ -66,6 +66,7 @@ class Users extends CActiveRecord
 		return array(
 			'role' => array(self::BELONGS_TO, 'Roles', 'role'),
             'AllowedPriceCount' => array(self::HAS_ONE, 'AllowedPriceCount', 'user_id'),
+            'price_items' => array(self::HAS_MANY, 'PriceItems', 'seller_id'),
 		);
 	}
 
@@ -111,4 +112,26 @@ class Users extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+    function getAvgPrice()
+    {
+        $counter = 0;
+        $sum = 0;
+        foreach($this->price_items as $item)
+        {
+            $sum += $item->price;
+            $counter += 1;
+        }
+        return $counter == 0 ? 0 : (float)($sum/$counter);
+    }
+
+    public function getAllowedShops()
+    {
+        $prices = PriceItems::model()->findAll(array("select"=>"seller_id", 'distinct'=>true));
+        $AllowedUsers = array();
+        foreach($prices as $price)
+            array_push($AllowedUsers, $price->seller_id);
+        $result = Users::model()->findAllByAttributes(array("id"=>$AllowedUsers));
+        return $result;
+    }
 }

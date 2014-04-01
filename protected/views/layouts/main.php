@@ -26,10 +26,12 @@
                 'type' => TbHtml::NAV_TYPE_PILLS,
                 'items' => array(
                     array('label' => 'Домашняя страница', 'url' => array('site/index'),),
+                    array('label' => 'Магазины', 'url' => array('shop/AllShops'), 'visible'=>Yii::app()->user->role == Roles::BUYER),
                     array('label' => 'Продавцы', 'url' => array('site/adminsellers'), 'visible'=>Yii::app()->user->role == Roles::ADMIN),
-                    array('label' => 'Мой магазин', 'url' => array('shop/index'), 'visible'=>Yii::app()->user->role == Roles::BUYER),
+                    array('label' => 'Мой магазин', 'url' => array('shop/UserMagazine'), 'visible'=>Yii::app()->user->role == Roles::SELLER),
+                    array('label' => 'Мои товары', 'url' => array('shop/UserItems'), 'visible'=>Yii::app()->user->role == Roles::SELLER),
                     array('label' => 'Выйти', 'url' => '/index.php/users/logout', 'visible'=>!Yii::app()->user->isGuest, 'style'=>'float: right'),
-                    array('label' => 'Мой профиль', 'url' => '#', 'visible'=>!Yii::app()->user->isGuest, 'style'=>'float: right'),
+                    array('label' => 'Мой профиль', 'url' => array('users/Profile'), 'visible'=>!Yii::app()->user->isGuest, 'style'=>'float: right'),
                 ),
             )); ?>
         </div>
@@ -55,6 +57,19 @@
 	</div><!-- footer -->
 
 </div><!-- page -->
-
+<?php $this->widget('bootstrap.widgets.TbModal', array(
+    'id' => 'image_modal',
+    'content' => '',
+)); ?>
 </body>
+<script>
+    $(document).ready(function()
+    {
+        $(".img-polaroid").on("click", function()
+        {
+            $("#image_modal").find(".modal-body").html('<img style="width: 100%" src=' + $(this).attr("src") + ' ?>');
+            $("#image_modal").modal("show");
+        })
+    });
+</script>
 </html>

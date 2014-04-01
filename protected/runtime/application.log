@@ -3239,3 +3239,526 @@ REQUEST_URI=/index.php/shop/item_full?item_id=23
 in D:\WebSites\test\protected\views\shop\item_full.php (12)
 in D:\WebSites\test\protected\controllers\ShopController.php (22)
 in D:\WebSites\test\index.php (13)
+2014/04/01 05:38:07 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:42:54 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:43:21 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:43:21 [error] [php] move_uploaded_file(/images/prices_pictures/9d07d5e2fed52db8ef8e337591c9e417.png): failed to open stream: No such file or directory (D:\WebSites\yii\framework\web\CUploadedFile.php:196)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionIndex()
+#1 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\WebSites\yii\framework\web\CController.php(286): ShopController->runAction()
+#3 D:\WebSites\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#4 D:\WebSites\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#5 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/shop/index
+in D:\WebSites\test\protected\controllers\ShopController.php (17)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:43:53 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:43:53 [error] [php] move_uploaded_file(/images/prices_pictures/ea40ee3dc21cc0db8f67dbf4d42ff457.png): failed to open stream: No such file or directory (D:\WebSites\yii\framework\web\CUploadedFile.php:196)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionIndex()
+#1 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\WebSites\yii\framework\web\CController.php(286): ShopController->runAction()
+#3 D:\WebSites\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#4 D:\WebSites\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#5 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/shop/index
+in D:\WebSites\test\protected\controllers\ShopController.php (17)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:45:54 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:46:06 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:46:06 [error] [php] move_uploaded_file(/images/prices_pictures/cdef2cb143db061b33a7c86caccb4876.png): failed to open stream: No such file or directory (D:\WebSites\yii\framework\web\CUploadedFile.php:196)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionIndex()
+#1 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\WebSites\yii\framework\web\CController.php(286): ShopController->runAction()
+#3 D:\WebSites\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#4 D:\WebSites\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#5 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/shop/index
+in D:\WebSites\test\protected\controllers\ShopController.php (17)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:46:50 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:49:19 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:49:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'image' at row 1. The SQL statement executed was: INSERT INTO `price_items` (`description`, `name`, `price`, `seller_id`, `image`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\WebSites\test\protected\controllers\ShopController.php (16)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:49:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'image' at row 1. The SQL statement executed was: INSERT INTO `price_items` (`description`, `name`, `price`, `seller_id`, `image`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in D:\WebSites\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\WebSites\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\WebSites\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\WebSites\test\protected\controllers\ShopController.php(16): CActiveRecord->save()
+#3 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionIndex()
+#4 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\WebSites\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\WebSites\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/index')
+#9 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebSites\test\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/shop/index
+HTTP_REFERER=http://test/index.php/shop/index
+---
+2014/04/01 05:49:57 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\WebSites\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/images/pri...')
+#3 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\WebSites\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/shop/images/prices_pictures/a7734b34c019a6931eaeefa9d260c3f6.png
+HTTP_REFERER=http://test/index.php/shop/index
+---
+2014/04/01 05:50:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\WebSites\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/images/pri...')
+#3 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\WebSites\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/shop/images/prices_pictures/a7734b34c019a6931eaeefa9d260c3f6.png
+HTTP_REFERER=http://test/index.php/shop/index
+---
+2014/04/01 05:50:32 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:51:42 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\WebSites\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/images/pri...')
+#3 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\WebSites\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/shop/images/prices_pictures/0d94d0d823648aee6bd2b76a46410996.png
+HTTP_REFERER=http://test/index.php/shop/index
+---
+2014/04/01 05:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\WebSites\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/images/pri...')
+#3 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\WebSites\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/shop/images/prices_pictures/c87858c9d4180fa9ae33d6898e22f031.png
+HTTP_REFERER=http://test/index.php/shop/index
+---
+2014/04/01 05:52:29 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (11)
+in D:\WebSites\test\index.php (13)
+2014/04/01 05:55:02 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (D:\WebSites\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 D:\WebSites\yii\framework\web\helpers\CHtml.php(426): tag()
+#2 D:\WebSites\test\protected\extensions\bootstrap\helpers\TbHtml.php(2709): image()
+#3 D:\WebSites\test\protected\extensions\bootstrap\helpers\TbHtml.php(2693): image()
+#4 D:\WebSites\test\protected\views\shop\item.php(11): imagePolaroid()
+#5 D:\WebSites\yii\framework\web\CBaseController.php(126): require()
+#6 D:\WebSites\yii\framework\web\CBaseController.php(95): ShopController->renderInternal()
+#7 D:\WebSites\yii\framework\web\CController.php(869): ShopController->renderFile()
+#8 D:\WebSites\test\protected\views\shop\index.php(10): ShopController->renderPartial()
+#9 D:\WebSites\yii\framework\web\CBaseController.php(126): require()
+#10 D:\WebSites\yii\framework\web\CBaseController.php(95): ShopController->renderInternal()
+#11 D:\WebSites\yii\framework\web\CController.php(869): ShopController->renderFile()
+#12 D:\WebSites\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#13 D:\WebSites\test\protected\controllers\ShopController.php(22): ShopController->render()
+#14 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionIndex()
+#15 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 D:\WebSites\yii\framework\web\CController.php(286): ShopController->runAction()
+#17 D:\WebSites\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#18 D:\WebSites\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#19 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/shop/index
+in D:\WebSites\test\protected\extensions\bootstrap\helpers\TbHtml.php (2709)
+in D:\WebSites\test\protected\extensions\bootstrap\helpers\TbHtml.php (2693)
+in D:\WebSites\test\protected\views\shop\item.php (11)
+2014/04/01 06:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<img class="img-polaroid" src="".' in D:\WebSites\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(270): CController->missingAction('<img class="img...')
+#1 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('<img class="img...')
+#2 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/<img class...')
+#3 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\WebSites\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/shop/%3Cimg%20class=%22img-polaroid%22%20src=%22/images/prices_pictures/a8353c431d62b012f7572fa58182b128.png%22%20alt=%22%22%20/%3E
+HTTP_REFERER=http://test/index.php/shop/UserItems
+---
+2014/04/01 06:35:54 [error] [php] Object of class TbNav could not be converted to string (D:\WebSites\test\protected\views\shop\user_items.php:33)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(869): ShopController->renderFile()
+#1 D:\WebSites\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#2 D:\WebSites\test\protected\controllers\ShopController.php(33): ShopController->render()
+#3 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionUserItems()
+#4 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\WebSites\yii\framework\web\CController.php(286): ShopController->runAction()
+#6 D:\WebSites\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#7 D:\WebSites\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#8 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/shop/UserItems
+in D:\WebSites\test\protected\views\shop\user_items.php (33)
+in D:\WebSites\test\protected\controllers\ShopController.php (33)
+in D:\WebSites\test\index.php (13)
+2014/04/01 06:49:21 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (16)
+in D:\WebSites\test\index.php (13)
+2014/04/01 06:49:27 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (16)
+in D:\WebSites\test\index.php (13)
+2014/04/01 06:49:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'description' at row 1. The SQL statement executed was: INSERT INTO `price_items` (`description`, `name`, `price`, `seller_id`, `image`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\WebSites\test\protected\controllers\ShopController.php (22)
+in D:\WebSites\test\index.php (13)
+2014/04/01 06:49:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'description' at row 1. The SQL statement executed was: INSERT INTO `price_items` (`description`, `name`, `price`, `seller_id`, `image`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in D:\WebSites\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\WebSites\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\WebSites\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\WebSites\test\protected\controllers\ShopController.php(22): CActiveRecord->save()
+#3 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionUserMagazine()
+#4 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\WebSites\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\WebSites\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('UserMagazine')
+#8 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/UserMagazi...')
+#9 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebSites\test\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/shop/UserMagazine
+HTTP_REFERER=http://test/index.php/shop/UserMagazine
+---
+2014/04/01 06:49:40 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (16)
+in D:\WebSites\test\index.php (13)
+2014/04/01 06:49:51 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (16)
+in D:\WebSites\test\index.php (13)
+2014/04/01 06:49:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'description' at row 1. The SQL statement executed was: INSERT INTO `price_items` (`description`, `name`, `price`, `seller_id`, `image`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\WebSites\test\protected\controllers\ShopController.php (22)
+in D:\WebSites\test\index.php (13)
+2014/04/01 06:49:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'description' at row 1. The SQL statement executed was: INSERT INTO `price_items` (`description`, `name`, `price`, `seller_id`, `image`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in D:\WebSites\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\WebSites\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\WebSites\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\WebSites\test\protected\controllers\ShopController.php(22): CActiveRecord->save()
+#3 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionUserMagazine()
+#4 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\WebSites\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\WebSites\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('UserMagazine')
+#8 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/UserMagazi...')
+#9 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebSites\test\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/shop/UserMagazine
+HTTP_REFERER=http://test/index.php/shop/UserMagazine
+---
+2014/04/01 06:50:47 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (16)
+in D:\WebSites\test\index.php (13)
+2014/04/01 07:05:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/Profile".' in D:\WebSites\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/Profile')
+#1 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebSites\test\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/user/Profile
+HTTP_REFERER=http://test/index.php/shop/UserMagazine
+---
+2014/04/01 07:05:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/Profile".' in D:\WebSites\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/Profile')
+#1 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebSites\test\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/user/Profile
+HTTP_REFERER=http://test/index.php/shop/UserMagazine
+---
+2014/04/01 07:09:16 [error] [php] Undefined variable: item (D:\WebSites\test\protected\views\users\Profile.php:13)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(869): UsersController->renderFile()
+#1 D:\WebSites\yii\framework\web\CController.php(782): UsersController->renderPartial()
+#2 D:\WebSites\test\protected\controllers\UsersController.php(55): UsersController->render()
+#3 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionProfile()
+#4 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\WebSites\yii\framework\web\CController.php(286): UsersController->runAction()
+#6 D:\WebSites\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#7 D:\WebSites\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#8 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/Profile
+in D:\WebSites\test\protected\views\users\Profile.php (13)
+in D:\WebSites\test\protected\controllers\UsersController.php (55)
+in D:\WebSites\test\index.php (13)
+2014/04/01 07:12:07 [error] [exception.CException] exception 'CException' with message 'Property "Users.price_items" is not defined.' in D:\WebSites\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\WebSites\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('price_items')
+#1 D:\WebSites\test\protected\views\users\Profile.php(17): CActiveRecord->__get('price_items')
+#2 D:\WebSites\yii\framework\web\CBaseController.php(126): require('D:\WebSites\tes...')
+#3 D:\WebSites\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\WebSites\tes...', Array, true)
+#4 D:\WebSites\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\WebSites\tes...', Array, true)
+#5 D:\WebSites\yii\framework\web\CController.php(782): CController->renderPartial('Profile', Array, true)
+#6 D:\WebSites\test\protected\controllers\UsersController.php(55): CController->render('Profile', Array)
+#7 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionProfile()
+#8 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\WebSites\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\WebSites\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('Profile')
+#12 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/Profile')
+#13 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebSites\test\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/users/Profile
+HTTP_REFERER=http://test/index.php/shop/UserItems
+---
+2014/04/01 07:12:43 [error] [exception.CException] exception 'CException' with message 'Property "Users.price_items" is not defined.' in D:\WebSites\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\WebSites\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('price_items')
+#1 D:\WebSites\test\protected\views\users\Profile.php(17): CActiveRecord->__get('price_items')
+#2 D:\WebSites\yii\framework\web\CBaseController.php(126): require('D:\WebSites\tes...')
+#3 D:\WebSites\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\WebSites\tes...', Array, true)
+#4 D:\WebSites\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\WebSites\tes...', Array, true)
+#5 D:\WebSites\yii\framework\web\CController.php(782): CController->renderPartial('Profile', Array, true)
+#6 D:\WebSites\test\protected\controllers\UsersController.php(55): CController->render('Profile', Array)
+#7 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionProfile()
+#8 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\WebSites\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\WebSites\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('Profile')
+#12 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/Profile')
+#13 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebSites\test\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/users/Profile
+HTTP_REFERER=http://test/index.php/shop/UserItems
+---
+2014/04/01 07:46:11 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (16)
+in D:\WebSites\test\index.php (13)
+2014/04/01 07:46:19 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (16)
+in D:\WebSites\test\index.php (13)
+2014/04/01 07:47:22 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (16)
+in D:\WebSites\test\index.php (13)
+2014/04/01 07:48:18 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (16)
+in D:\WebSites\test\index.php (13)
+2014/04/01 07:49:31 [warning] [application] Failed to set unsafe attribute "image" of "PriceItems".
+in D:\WebSites\test\protected\controllers\ShopController.php (16)
+in D:\WebSites\test\index.php (13)
+2014/04/01 07:59:24 [error] [php] Trying to get property of non-object (D:\WebSites\test\protected\views\users\Profile.php:24)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(869): UsersController->renderFile()
+#1 D:\WebSites\yii\framework\web\CController.php(782): UsersController->renderPartial()
+#2 D:\WebSites\test\protected\controllers\UsersController.php(55): UsersController->render()
+#3 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionProfile()
+#4 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\WebSites\yii\framework\web\CController.php(286): UsersController->runAction()
+#6 D:\WebSites\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#7 D:\WebSites\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#8 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/Profile
+in D:\WebSites\test\protected\views\users\Profile.php (24)
+in D:\WebSites\test\protected\controllers\UsersController.php (55)
+in D:\WebSites\test\index.php (13)
+2014/04/01 08:00:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AllShops".' in D:\WebSites\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(270): CController->missingAction('AllShops')
+#1 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('AllShops')
+#2 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/AllShops')
+#3 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\WebSites\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/shop/AllShops
+HTTP_REFERER=http://test/index.php/site/index
+---
+2014/04/01 08:07:04 [error] [php] Undefined variable: items (D:\WebSites\test\protected\views\shop\all_shops.php:4)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(869): ShopController->renderFile()
+#1 D:\WebSites\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#2 D:\WebSites\test\protected\controllers\ShopController.php(45): ShopController->render()
+#3 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionAllShops()
+#4 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\WebSites\yii\framework\web\CController.php(286): ShopController->runAction()
+#6 D:\WebSites\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#7 D:\WebSites\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#8 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/shop/AllShops
+in D:\WebSites\test\protected\views\shop\all_shops.php (4)
+in D:\WebSites\test\protected\controllers\ShopController.php (45)
+in D:\WebSites\test\index.php (13)
+2014/04/01 08:08:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\WebSites\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/images/sys...')
+#3 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\WebSites\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/shop/images/system/test.png
+HTTP_REFERER=http://test/index.php/shop/AllShops
+---
+2014/04/01 08:13:24 [error] [php] Undefined variable: item (D:\WebSites\test\protected\views\shop\shop.php:15)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(869): ShopController->renderFile()
+#1 D:\WebSites\test\protected\views\shop\all_shops.php(7): ShopController->renderPartial()
+#2 D:\WebSites\yii\framework\web\CBaseController.php(126): require()
+#3 D:\WebSites\yii\framework\web\CBaseController.php(95): ShopController->renderInternal()
+#4 D:\WebSites\yii\framework\web\CController.php(869): ShopController->renderFile()
+#5 D:\WebSites\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#6 D:\WebSites\test\protected\controllers\ShopController.php(45): ShopController->render()
+#7 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionAllShops()
+#8 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\WebSites\yii\framework\web\CController.php(286): ShopController->runAction()
+#10 D:\WebSites\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#11 D:\WebSites\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#12 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/shop/AllShops
+in D:\WebSites\test\protected\views\shop\shop.php (15)
+in D:\WebSites\test\protected\views\shop\all_shops.php (7)
+in D:\WebSites\test\protected\controllers\ShopController.php (45)
+2014/04/01 08:13:38 [error] [php] Trying to get property of non-object (D:\WebSites\test\protected\views\shop\item_full.php:11)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(869): ShopController->renderFile()
+#1 D:\WebSites\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#2 D:\WebSites\test\protected\controllers\ShopController.php(39): ShopController->render()
+#3 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionItem_Full()
+#4 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\WebSites\yii\framework\web\CController.php(286): ShopController->runAction()
+#6 D:\WebSites\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#7 D:\WebSites\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#8 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/shop/item_full?item_id=9
+in D:\WebSites\test\protected\views\shop\item_full.php (11)
+in D:\WebSites\test\protected\controllers\ShopController.php (39)
+in D:\WebSites\test\index.php (13)
+2014/04/01 08:13:43 [error] [php] Trying to get property of non-object (D:\WebSites\test\protected\views\shop\item_full.php:11)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(869): ShopController->renderFile()
+#1 D:\WebSites\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#2 D:\WebSites\test\protected\controllers\ShopController.php(39): ShopController->render()
+#3 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionItem_Full()
+#4 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\WebSites\yii\framework\web\CController.php(286): ShopController->runAction()
+#6 D:\WebSites\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#7 D:\WebSites\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#8 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/shop/item_full?item_id=6
+in D:\WebSites\test\protected\views\shop\item_full.php (11)
+in D:\WebSites\test\protected\controllers\ShopController.php (39)
+in D:\WebSites\test\index.php (13)
+2014/04/01 08:14:09 [error] [php] Trying to get property of non-object (D:\WebSites\test\protected\views\shop\item_full.php:11)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(869): ShopController->renderFile()
+#1 D:\WebSites\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#2 D:\WebSites\test\protected\controllers\ShopController.php(39): ShopController->render()
+#3 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionItem_Full()
+#4 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\WebSites\yii\framework\web\CController.php(286): ShopController->runAction()
+#6 D:\WebSites\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#7 D:\WebSites\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#8 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/shop/item_full?item_id=9
+in D:\WebSites\test\protected\views\shop\item_full.php (11)
+in D:\WebSites\test\protected\controllers\ShopController.php (39)
+in D:\WebSites\test\index.php (13)
+2014/04/01 13:28:16 [error] [exception.CException] exception 'CException' with message 'Property "Users.image" is not defined.' in D:\WebSites\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\WebSites\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('image')
+#1 D:\WebSites\test\protected\views\shop\shop.php(17): CActiveRecord->__get('image')
+#2 D:\WebSites\yii\framework\web\CBaseController.php(126): require('D:\WebSites\tes...')
+#3 D:\WebSites\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\WebSites\tes...', Array, true)
+#4 D:\WebSites\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\WebSites\tes...', Array, true)
+#5 D:\WebSites\test\protected\views\shop\all_shops.php(7): CController->renderPartial('shop', Array)
+#6 D:\WebSites\yii\framework\web\CBaseController.php(126): require('D:\WebSites\tes...')
+#7 D:\WebSites\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\WebSites\tes...', Array, true)
+#8 D:\WebSites\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\WebSites\tes...', Array, true)
+#9 D:\WebSites\yii\framework\web\CController.php(782): CController->renderPartial('all_shops', Array, true)
+#10 D:\WebSites\test\protected\controllers\ShopController.php(45): CController->render('all_shops', Array)
+#11 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionAllShops()
+#12 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\WebSites\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\WebSites\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('AllShops')
+#16 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/AllShops')
+#17 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\WebSites\test\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/shop/AllShops
+HTTP_REFERER=http://test/index.php/site/index
+---
+2014/04/01 13:30:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in D:\WebSites\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\WebSites\yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/images/sys...')
+#3 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\WebSites\test\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/shop/images/system/test.jpg
+HTTP_REFERER=http://test/index.php/shop/AllShops
+---
+2014/04/01 13:58:19 [error] [php] Trying to get property of non-object (D:\WebSites\test\protected\views\users\Profile.php:24)
+Stack trace:
+#0 D:\WebSites\yii\framework\web\CController.php(869): UsersController->renderFile()
+#1 D:\WebSites\yii\framework\web\CController.php(782): UsersController->renderPartial()
+#2 D:\WebSites\test\protected\controllers\UsersController.php(55): UsersController->render()
+#3 D:\WebSites\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionProfile()
+#4 D:\WebSites\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\WebSites\yii\framework\web\CController.php(286): UsersController->runAction()
+#6 D:\WebSites\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#7 D:\WebSites\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#8 D:\WebSites\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\WebSites\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebSites\test\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/Profile
+in D:\WebSites\test\protected\views\users\Profile.php (24)
+in D:\WebSites\test\protected\controllers\UsersController.php (55)
+in D:\WebSites\test\index.php (13)

@@ -71,6 +71,17 @@ body
 {
     padding: 10px;
 }
+.shop_element
+{
+    border: 2px solid green;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 30px yellowgreen;
+}
+.shops_grid
+{
+    padding: 10px;
+}
 #fullmenu
 {
     position: fixed;
@@ -238,6 +249,24 @@ div.search-form
 .portlet-content li
 {
 	padding: 2px 0 4px 0px;
+}
+.items_table
+{
+    margin-top: 15px;
+}
+
+.img-polaroid
+{
+    max-height: 140px;
+}
+
+.items_table tr, td
+{
+    border: 2px solid green;
+}
+.table_header
+{
+    background-color: lightgreen;
 }
 
 .operations

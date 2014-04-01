@@ -8,7 +8,7 @@
 ?>
 <div class="row" style="margin-top: 10px;">
     <div class="span-8">
-        <?php echo TbHtml::imagePolaroid('/images/system/test.jpg'); ?><br><br>
+        <?php echo TbHtml::imagePolaroid("/images/prices_pictures/" . $item->image); ?><br><br>
         <?php echo TbHtml::quote('Стоимость: <b>' . $item->price . ' руб.</b>', array(
             'source' => $item->seller->name,
         )); ?>

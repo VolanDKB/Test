@@ -49,6 +49,12 @@ class UsersController extends Controller
         $this->render("login_registrate", array('login'=>$user_login, 'registrate'=>$user_registrate));
     }
 
+    public function actionProfile()
+    {
+        $User = Users::model()->findByPk(Yii::app()->user->id);
+        $this->render("Profile", array('user'=>$User));
+    }
+
     public function actionLogout()
     {
         Yii::app()->user->logout();
